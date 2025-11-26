@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Laguna School</title>
+    <link rel="stylesheet" href="styleLogin.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    
+     
+    
+  </head>
+
+  <body>
+    <main class="login-container">
+      <section class="login-card">
+        <aside class="login-sidebar">
+          <div class="logo-section">
+            <img
+              src="./img/logo-laguna.png"
+              alt="Logo Laguna School"
+              width="200px"
+            />
+          </div>
+
+          <p class="welcome-text">BEM-VINDO à</p>
+
+          <div class="school-title">
+            <h2>Laguna School</h2>
+          </div>
+
+          <a href="sobre.html" target="_blank" class="creditos-btn">
+            Créditos
+          </a>
+        </aside>
+
+        <section class="form-section">
+          <h1 class="form-title">FAÇA LOGIN</h1>
+
+          <form class="login-form" action="/login" method="GET">
+            <div class="input-field">
+              <label for="usuario" class="sr-only"></label>
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Usuário"
+                required
+              />
+            </div>
+
+            <div class="password-input">
+              <label for="senha" class="sr-only"></label>
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="••••••••"
+                required
+              />
+              <button
+                type="button"
+                class="toggle-password-btn"
+                aria-label="Mostrar Senha"
+              >
+                <i class="fa-solid fa-eye-slash eye-icon"></i>
+              </button>
+            </div>
+
+            <div class="role-selection">
+              <label for="perfil">Entrar como:</label>
+              <div>
+                <select id="perfil" name="select">
+                  <option value="professor" selected>Professor</option>
+                  <option value="aluno">Aluno</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Entrar</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Laguna School</p>
+    </footer>
+
+  </body>
+</html>

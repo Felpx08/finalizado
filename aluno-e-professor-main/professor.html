@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard do Professor | FUTURE GO</title>
+    <link rel="stylesheet" href="styleprofessor.css" />
+    <link rel="stylesheet" href="styleativi.css" 
+    rel="stylesheet"
+
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="logo-section">
+          <div class="logo-icon">
+            <img src="./logo-go-future.png" alt="" />
+          </div>
+          <div class="logo-text">FUTURE GO</div>
+        </div>
+        <h1>BEM-VINDO</h1>
+        <h2>PROFESSOR</h2>
+        <nav class="sidebar-nav">
+          <a href="./login.html" class="nav-item active">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <h1>VISÃO GERAL</h1>
+          <div class="user-controls">
+            <i class="fas fa-bell"></i>
+            <div
+              class="user-avatar"
+              role="img"
+              aria-label="Avatar do usuário"
+            ></div>
+          </div>
+        </header>
+
+        <div class="content-wrapper">
+          <section class="main-area">
+            <div class="card notice-input">
+              <div class="avatar" role="img" aria-label="Seu avatar"></div>
+              <input
+                type="text"
+                placeholder="Escreva um aviso para sua turma..."
+              />
+              <button class="send-button" type="submit">
+                <i class="fas fa-paper-plane"></i> Enviar
+              </button>
+            </div>
+
+            <article class="card notice">
+              <div class="notice-header">
+                <div
+                  class="avatar"
+                  role="img"
+                  aria-label="Avatar do Professor"
+                ></div>
+                <div>
+                  <span class="name">Professor Goti</span>
+                </div>
+                <i class="fas fa-ellipsis-v" aria-label="Opções do aviso"></i>
+              </div>
+              <p class="greeting">Olá, turma!</p>
+              <p>
+                Hoje publicarei a atividade avaliativa de Português e
+                Matematica, entreguem no prazo.
+              </p>
+              <footer class="notice-footer">
+                <a href="#">Editar</a>
+              </footer>
+            </article>
+          </section>
+
+          <aside class="action-cards-column">
+            <div class="action-card activities-card">
+              <div class="icon-section"><i class="fas fa-file-alt"></i></div>
+              <div class="text-section">Atividades</div>
+              <a href="#activitySelectionModal" class="details-button">Gerenciar Entregas</a>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div id="activitySelectionModal" class="modal">
+      <a href="#" class="modal-backdrop"></a>
+      <div class="modal-content">
+        <a href="#" class="close-button">&times;</a>
+        <h2>Selecione a Atividade para Gerenciar:</h2>
+
+        <div class="selection-grid" style="display: flex; gap: 20px; margin-top: 30px;">
+            <a href="#mathExercisesModal" class="action-card activities-card" style="flex: 1; text-decoration: none; color: white;">
+                <div class="icon-section"><i class="fas fa-calculator"></i></div>
+                <div class="text-section">Matemática</div>
+                <span class="details-button" style="border-bottom: none;">Visualizar Exercícios</span>
+            </a>
+            
+            <a href="#portugueseExercisesModal" class="action-card planning-card" style="flex: 1; text-decoration: none; color: white; background: linear-gradient(135deg, var(--color-purple), #9974e3);">
+                <div class="icon-section"><i class="fas fa-book"></i></div>
+                <div class="text-section">Português</div>
+                <span class="details-button" style="border-bottom: none;">Visualizar Exercícios</span>
+            </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="mathExercisesModal" class="modal">
+        <a href="./styleativi.css" class="modal-backdrop"></a> <div class="modal-content">
+            <a href="./styleativi.css" class="close-button">&times;</a> <h2>📚 Exercícios de Matemática:</h2>
+            
+            <div class="exercise-list">
+                
+                <div class="exercise">
+                    <h3>1. Cálculo de Área</h3>
+                    <p>Uma sala de aula tem dimensões de 10 metros de comprimento por 7 metros de largura. Qual é a área total da sala em metros quadrados?</p>
+                </div>
+                
+                <div class="exercise">
+                    <h3>2. Equação Simples</h3>
+                    <p>Resolva a seguinte equação para encontrar o valor de $x$: $$2x + 10 = 24$$</p>
+                </div>
+                
+                <div class="exercise">
+                    <h3>3. Operações com Frações</h3>
+                    <p>Calcule a soma das seguintes frações: $$\frac{1}{3} + \frac{2}{6}$$</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>4. Porcentagem</h3>
+                    <p>Se um celular custa R$ 800,00 e está com 20% de desconto, qual é o valor do desconto?</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portugueseExercisesModal" class="modal">
+        <a href="./styleativi.css" class="modal-backdrop"></a> <div class="modal-content">
+            <a href="./styleativi.css" class="close-button">&times;</a> <h2>📝 Exercícios de Português:</h2>
+            
+            <div class="exercise-list">
+                
+                <div class="exercise">
+                    <h3>1. Concordância Verbal</h3>
+                    <p>Complete a frase com o verbo conjugado corretamente: "Nós (ir) ao cinema amanhã."</p>
+                </div>
+                
+                <div class="exercise">
+                    <h3>2. Uso do "Porquê"</h3>
+                    <p>Qual a forma correta do "porquê" na seguinte frase: "Você não veio ___ choveu muito?"</p>
+                </div>
+                
+                <div class="exercise">
+                    <h3>3. Classificação Gramatical</h3>
+                    <p>Qual é a classificação gramatical da palavra destacada: "O <strong>livro</strong> está na mesa."</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>4. Acentuação Gráfica</h3>
+                    <p>Qual das palavras a seguir é acentuada: "mesa", "computador", "voce", "cafe"?</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

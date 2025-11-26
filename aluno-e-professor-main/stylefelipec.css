@@ -1,0 +1,117 @@
+body {
+    background-color: rebeccapurple;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #3e3f46, #c02727);
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+header h1 {
+    margin: 15px 0 5px;
+    font-size: 26px;
+}
+
+header p {
+    margin: 2px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.card {
+    background: rgba(19, 9, 9, 0.493);
+    border-radius: 12px;
+    padding: 30px;
+    padding-left: 30px;
+    text-align: start;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+}
+
+footer {
+    margin: 30px 0px;
+    font-size: 14px;
+}
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card2 {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+        /* Estilos do botão para "Voltar para Sobre" */
+        .back-button-container {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3b82f6; /* Azul primário */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .back-button:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }

@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tela do Aluno | FUTURE GO</title> 
+    <link rel="stylesheet" href="stylealuno.css">
+    
+    
+    
+   
+</head> 
+<body> 
+    <div class="dashboard-container"> 
+        
+        <aside class="sidebar"> 
+            <div class="logo-section"> 
+                <div class="logo-icon"></div> 
+                <div class="logo-text">FUTURE GO</div> 
+            </div> 
+            <h1>BEM-VINDO</h1> 
+            <h2>ALUNO(A)</h2> 
+            <nav class="sidebar-nav"> 
+                <a href="./login.html" class="nav-item active"> 
+                    <i class="fas fa-home"></i> Home 
+                </a> 
+            </nav> 
+        </aside> 
+        <main class="main-content"> 
+            <header class="header"> 
+                <div class="user-controls"> 
+                    <div class="user-avatar"></div> 
+                </div> 
+            </header> 
+            <div class="subject-grid"> 
+        
+                <a href="#mathExercisesModal" class="subject-card highlighted-card subject-link">
+                    <div class="card-content"> 
+                        <span>Matematica</span> 
+                    </div> 
+                </a>
+                
+                
+                <a href="#portugueseExercisesModal" class="subject-card highlighted-card subject-link"> 
+                    <div class="card-content"> 
+                        <span>Português</span> 
+                    </div> 
+                </a> 
+                
+                <div class="subject-card empty-card"> 
+                    <div class="card-content"> 
+                        <span>Historia</span> 
+                    </div> 
+                </div> 
+                <div class="subject-card empty-card"> 
+                    <div class="card-content"> 
+                        <span>Biologia</span> 
+                    </div> 
+                </div> 
+                <div class="subject-card empty-card"> 
+                    <div class="card-content"> 
+                        <span>Ingles</span> 
+                    </div> 
+                </div> 
+                <div class="subject-card empty-card"> 
+                    <div class="card-content"> 
+                        <span>Química</span> 
+                    </div> 
+                </div> 
+            </div> 
+        </main> 
+    </div> 
+    
+    
+    <div id="mathExercisesModal" class="modal">
+        <a href="#" class="modal-backdrop"></a> 
+        <div class="modal-content">
+            <a href="#" class="close-button">&times;</a>
+            <h2>📚 Exercícios de Matemática:</h2>
+            
+            <div class="exercise-list">
+                
+                <div class="exercise">
+                    <h3>1. Cálculo de Área</h3>
+                    <p>Uma sala de aula tem dimensões de 10 metros de comprimento por 7 metros de largura. Qual é a área total da sala em metros quadrados?</p>
+                </div>
+                
+                <div class="exercise">
+                    <h3>2. Equação Simples</h3>
+                    <p>Resolva a seguinte equação para encontrar o valor de $x$: $$2x + 10 = 24$$</p>
+                   
+                </div>
+                
+                <div class="exercise">
+                    <h3>3. Operações com Frações</h3>
+                    <p>Calcule a soma das seguintes frações: $$\frac{1}{3} + \frac{2}{6}$$</p>
+                    
+                </div>
+
+                <div class="exercise">
+                    <h3>4. Porcentagem</h3>
+                    <p>Se um celular custa R$ 800,00 e está com 20% de desconto, qual é o valor do desconto?</p>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="portugueseExercisesModal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-button">&times;</a>
+            <h2>📝 Exercícios de Português:</h2>
+            
+            <div class="exercise-list">
+                
+                <div class="exercise">
+                    <h3>1. Concordância Verbal</h3>
+                    <p>Complete a frase com o verbo conjugado corretamente: "Nós (ir) ao cinema amanhã."</p>
+                    
+                </div>
+                
+                <div class="exercise">
+                    <h3>2. Uso do "Porquê"</h3>
+                    <p>Qual a forma correta do "porquê" na seguinte frase: "Você não veio ___ choveu muito?"</p>
+                    
+                </div>
+                
+                <div class="exercise">
+                    <h3>3. Classificação Gramatical</h3>
+                    <p>Qual é a classificação gramatical da palavra destacada: "O <strong>livro</strong> está na mesa."</p>
+                    
+                </div>
+
+                <div class="exercise">
+                    <h3>4. Acentuação Gráfica</h3>
+                    <p>Qual das palavras a seguir é acentuada: "mesa", "computador", "voce", "cafe"?</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body> 
+</html>

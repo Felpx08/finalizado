@@ -1,0 +1,11 @@
+:root {
+  --color-brand-primary: #BBD2F5; /* Cor principal de destaque */
+  --color-text-secondary: #6c757d; /* Cor para texto secundário/ícones */
+  --color-action-hover: #0056b3; /* Cor de hover para botões */
+  --color-background-body: #f4f7f6; /* Fundo geral da página */
+  --color-background-card: #ffffff; /* Fundo de cards/modals */
+  --color-background-panel: #e9ecef; /* Fundo do painel lateral */
+  --color-text-default: #343a40;
+  --color-border-input: #ced4da;
+  --color-text-placeholder: #adb5bd;
+}
